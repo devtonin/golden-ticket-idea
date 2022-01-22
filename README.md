@@ -25,7 +25,7 @@
 
 ## 🛠️ Construído com
 
-* [Java](http://www.dropwizard.io/1.0.2/docs/) - Linguagem de programação usada.
+* [Java](https://dev.java/) - Linguagem de programação usada.
 * [Maven](https://maven.apache.org/) - Gerenciador de dependências.
 * [Spring Boot](https://spring.io/projects/spring-boot) - Projeto do Spring Framework utilizado para construir uma aplicação Web REST.
 * [Spring Cloud](https://spring.io/projects/spring-cloud) - Projeto do Spring para comunicação dos microsserviços.
