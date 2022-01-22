@@ -18,7 +18,7 @@
 ### 🔧 Instalação
 
 - Clone esse repositório na sua máquina
-- Abra o IntelliJ e abra os 4 projetos em paralelo (quatro instâncias do IntelliJ)
+- Abra o IntelliJ e importe os 4 projetos em paralelo (quatro instâncias do IntelliJ)
 - Suba cada uma das 4 pelo botão de play no IntelliJ. (suba o eureka-server primeiro)
 - Já é possivel acessar a dashboard do Eureka pelo endereço: localhost:8762 e ver todos os microsserviços subindo
 - Por fim abra o Postman, importe a coleção anexada nesse projeto e se divirta!
