@@ -1,7 +1,7 @@
 # Microsserviços Java com Spring Cloud
 
 - Esse projeto foi desenvolvido com propósitos de estudos apenas, para a disciplina de Sistemas Distribuídos 2021/1 IFSULDEMINAS Poços de Caldas.
-- O projeto conta com 3 microsserviços, sendo o microsserviço de Produtos um CRUD completo. Cada microsserviço sobe sua própria instância do banco de dados H2 e todos os três se comunicação via REST.
+- O projeto conta com 3 microsserviços, sendo o microsserviço de Produtos um CRUD completo. Cada microsserviço sobe sua própria instância do banco de dados H2 e todos os três se comunicam via REST.
 - O microsserviço Ticket funciona com um bilhete, podendo ser encontrado em um produto.
 - O microsserviço Produto possui um bilhete, que pode estar ATIVO ou INATIVO.
 - O microsserviço Cliente também possui um bilhete, podendo assim o Cliente ter tirado a sorte grande com seu bilhete premiado.
