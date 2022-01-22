@@ -1,6 +1,6 @@
 # Microsserviços Java com Spring Cloud
 
-- Esse projeto foi desenvolvido com propósitos de estudos apenas, para a disciplina de Sistemas Distribuídos 2021/1 IFSULDEMINAS Poços de Caldas.
+- Esse projeto foi desenvolvido com propósitos educacionais apenas, para a disciplina de Sistemas Distribuídos 2021/1 IFSULDEMINAS Poços de Caldas.
 - O projeto conta com 3 microsserviços, sendo o microsserviço de Produtos um CRUD completo. Cada microsserviço sobe sua própria instância do banco de dados H2 e todos os três se comunicam via REST através do Eureka Server.
 
 ## 🚀 Começando
