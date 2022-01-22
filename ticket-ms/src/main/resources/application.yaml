@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ticket-ms
+server:
+  port: 6060
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8762/eureka}
+  instance:
+    preferIpAddress: true
