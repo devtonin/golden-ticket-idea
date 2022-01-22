@@ -1,7 +1,7 @@
 # Microsserviços Java com Spring Cloud
 
 - Esse projeto foi desenvolvido com propósitos de estudos apenas, para a disciplina de Sistemas Distribuídos 2021/1 IFSULDEMINAS Poços de Caldas.
-- O projeto conta com 3 microsserviços, sendo o microsserviço de Produtos um CRUD completo. Cada microsserviço sobe sua própria instância do banco de dados H2 e todos os três se comunicam via REST.
+- O projeto conta com 3 microsserviços, sendo o microsserviço de Produtos um CRUD completo. Cada microsserviço sobe sua própria instância do banco de dados H2 e todos os três se comunicam via REST através do Eureka Server.
 - O microsserviço Ticket funciona com um bilhete, podendo ser encontrado em um produto.
 - O microsserviço Produto possui um bilhete, que pode estar ATIVO ou INATIVO.
 - O microsserviço Cliente também possui um bilhete, podendo assim o Cliente ter tirado a sorte grande com seu bilhete premiado.
@@ -28,7 +28,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 * [Java](http://www.dropwizard.io/1.0.2/docs/) - Linguagem de programação usada.
 * [Maven](https://maven.apache.org/) - Gerenciador de dependências.
-* [Spring Boot](https://spring.io/projects/spring-boot) - Framework Java utilizado para construir uma aplicação Web REST.
+* [Spring Boot](https://spring.io/projects/spring-boot) - Projeto do Spring Framework utilizado para construir uma aplicação Web REST.
 * [Spring Cloud](https://spring.io/projects/spring-cloud) - Projeto do Spring para comunicação dos microsserviços.
 * [H2 Database](https://www.h2database.com/html/main.html) - Banco de dados local para aplicações Java.
 
