@@ -12,8 +12,6 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 - Alguma IDE de desenvolvimento Java, recomendado IntelliJ.
 - Postman e essa coleção de testes (https://www.getpostman.com/collections/af67577bd3dee035fff9).
 
-```
-
 ### 🔧 Instalação
 
 - Clone esse repositório na sua máquina
@@ -21,8 +19,6 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 - Suba cada uma das 4 pelo botão de play no IntelliJ. (suba o eureka-server primeiro).
 - Já é possivel acessar a dashboard do Eureka pelo endereço: localhost:8762 e ver todos os microsserviços subindo.
 - Por fim abra o Postman, importe a coleção anexada nesse projeto e se divirta.
-
-```
 
 ## 🛠️ Construído com
 
@@ -42,4 +38,4 @@ Nós usamos [GitHub](http://github.com) para controle de versão. Para as versõ
 * **Mateus Nazaré** - *Desenvolvimento* - [MateusNazare](https://github.com/MateusNazare)
 
 ---
-⌨️ com ❤️ por [Antonio Amaral](https://github.com/oamaraldev) 😊
+⌨️ com ❤️ por [Antonio Amaral](https://github.com/oamaraldev)
