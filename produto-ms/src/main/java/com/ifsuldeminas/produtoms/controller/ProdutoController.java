@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import javax.validation.Valid;
+import java.util.List;
 import java.util.Optional;
 
 //CRUD dos requisitos do trabalho
@@ -23,8 +23,12 @@ public class ProdutoController {
 
     //getAll
     @GetMapping(value = "/produto")
-    public Iterable<ProdutoDTO> findAll() {
-        return produtoRepository.findAll();
+    public List<ProdutoDTO> findAllProdutos() {
+       List<ProdutoDTO> produtos = produtoRepository.findAll();
+        for (ProdutoDTO produto : produtos) {
+            produto.setTicket(ticketService.findByProdutoId(produto.getProdutoId()));
+        }
+       return produtos;
     }
 
     //get por produtoId
