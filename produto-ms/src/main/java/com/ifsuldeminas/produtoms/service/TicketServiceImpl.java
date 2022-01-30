@@ -19,7 +19,16 @@ public class TicketServiceImpl implements TicketService {
         return restTemplate.getForObject("http://ticket-ms/ticket/produto/{produtoId}", TicketDTO.class, produtoId);
     }
 
+    @HystrixCommand(fallbackMethod = "defaultTicketSave")
+    public TicketDTO saveTicket(TicketDTO ticket) {
+        return restTemplate.postForObject("http://ticket-ms/ticket", ticket, TicketDTO.class);
+    }
+
     private TicketDTO defaultTicket(Integer produtoId) {
+        return new TicketDTO();
+    }
+
+    private TicketDTO defaultTicketSave(TicketDTO ticket) {
         return new TicketDTO();
     }
 }

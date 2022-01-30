@@ -1,6 +1,7 @@
 package com.ifsuldeminas.produtoms.controller;
 
 import com.ifsuldeminas.produtoms.model.ProdutoDTO;
+import com.ifsuldeminas.produtoms.model.TicketDTO;
 import com.ifsuldeminas.produtoms.repository.ProdutoRepository;
 import com.ifsuldeminas.produtoms.service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +43,10 @@ public class ProdutoController {
     //post
     @RequestMapping(value = "/produto", method =  RequestMethod.POST)
     public ProdutoDTO cadastraProduto(@Valid @RequestBody ProdutoDTO produto) {
-        return produtoRepository.save(produto);
+        produto.getTicket().setProdutoId(produto.getProdutoId());
+        ticketService.saveTicket(produto.getTicket());
+        produtoRepository.save(produto);
+        return produto;
     }
 
     //update
