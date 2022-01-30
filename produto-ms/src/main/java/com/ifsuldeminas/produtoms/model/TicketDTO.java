@@ -9,6 +9,7 @@ public class TicketDTO implements Serializable {
     Integer ticketId;
     Integer numeroPremiado;
     String status;
+    Integer produtoId;
 
     public TicketDTO() {
         super();
@@ -40,5 +41,13 @@ public class TicketDTO implements Serializable {
 
     public static long getSerialversionuid() {
         return serialVersionUID;
+    }
+
+    public Integer getProdutoId() {
+        return produtoId;
+    }
+
+    public void setProdutoId(Integer produtoId) {
+        this.produtoId = produtoId;
     }
 }
