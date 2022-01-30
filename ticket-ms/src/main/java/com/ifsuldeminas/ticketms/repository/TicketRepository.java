@@ -6,4 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 public interface TicketRepository extends CrudRepository<TicketDTO, Integer> {
     TicketDTO findTicketByNumeroPremiado(Integer numeroPremiado);
     TicketDTO findAllByProdutoId(Integer produtoId);
+    TicketDTO findByTicketId(Integer ticketId);
 }
