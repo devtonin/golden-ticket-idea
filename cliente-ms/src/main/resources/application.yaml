@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: cliente-ms
+server:
+  port: 6262
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8762/eureka}
+  instance:
+    preferIpAddress: true
+
+error:
+  whitelabel:
+    enabled: false
