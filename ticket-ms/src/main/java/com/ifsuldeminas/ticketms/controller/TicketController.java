@@ -5,6 +5,8 @@ import com.ifsuldeminas.ticketms.repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 public class TicketController {
 
@@ -30,4 +32,10 @@ public class TicketController {
     public TicketDTO findByProdutoId (@PathVariable Integer produtoId) {
         return ticketRepository.findAllByProdutoId(produtoId);
     }
+
+    @RequestMapping(value = "/ticket", method =  RequestMethod.POST)
+    public TicketDTO cadastraTicket(@Valid @RequestBody TicketDTO ticket) {
+        return ticketRepository.save(ticket);
+    }
+
 }
