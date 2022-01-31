@@ -6,6 +6,8 @@ import com.ifsuldeminas.clientems.service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class ClienteController {
 
@@ -17,8 +19,12 @@ public class ClienteController {
 
     //getAll
     @GetMapping(value = "/cliente")
-    public Iterable<ClienteDTO> findAll() {
-        return clienteRepository.findAll();
+    public List<ClienteDTO> findAllClientes() {
+        List<ClienteDTO> clientes = clienteRepository.findAll();
+        for (ClienteDTO cliente: clientes) {
+            cliente.setTicket(ticketService.findByTicketId(cliente.getTicketId()));
+        }
+        return clientes;
     }
 
     //get por numeroPremiado
