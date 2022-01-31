@@ -12,7 +12,7 @@
 ### 📋 Pré-requisitos
 
 - JDK 11 ou superior devidamente instalada com suas variáveis de ambiente;
-- Alguma IDE de desenvolvimento Java, recomendado IntelliJ IDEA;
+- Alguma IDE de desenvolvimento Java, recomendado o IntelliJ IDEA;
 - Postman rodando minha coleção feita para testes: https://www.getpostman.com/collections/af67577bd3dee035fff9;
 
 ### 🔧 Instalação
