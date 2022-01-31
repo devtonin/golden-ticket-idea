@@ -1,31 +1,36 @@
-# Microsserviços Java com Spring Cloud
+# Microsserviços Java com Spring Boot e Spring Cloud
 
-- Esse projeto foi desenvolvido com propósitos educacionais apenas, para a disciplina de Sistemas Distribuídos 2021/1 do curso de Engenharia de Computação do Instituto Federal do Sul de Minas Gerais.
+- Esse projeto foi desenvolvido com propósitos educacionais apenas, para a disciplina de Sistemas Distribuídos 2021/2 do curso de Engenharia de Computação do Instituto Federal do Sul de Minas Gerais.
 - O projeto conta com 3 microsserviços, sendo o microsserviço de Produto um CRUD completo. Cada microsserviço sobe sua própria instância do banco H2 e todos os três se comunicam via REST, com as facilidades do Eureka Server.
 
-## 🚀 Começando
+## 🚀 Como funciona
 
-- O microsserviço Ticket funciona com um bilhete, podendo ser encontrado em um produto. O que define se ele está premiado ou não é seu status.
-- O microsserviço Produto possui um bilhete. Os dois tem o atributo "produtoId" em comum.
-- O microsserviço Cliente também possui um bilhete, com o atributo "ticketId" em comum, podendo assim o Cliente ter tirado um bilhete premiado.
+- O microsserviço Ticket funciona com um bilhete, podendo ser encontrado em todos os produtos. O que define se o bilhete é premiado ou não é seu status ("ATIVO" ou "INATIVO").
+- O microsserviço Produto possui um bilhete, e os dois possuem o atributo "produtoId" em comum.
+- Por fim, o microsserviço Cliente também possui um bilhete com o atributo "ticketId" em comum, podendo assim o Cliente ter tirado um bilhete premiado.
 
 ### 📋 Pré-requisitos
 
-- JDK 11 ou superior devidamente instalada.
-- Alguma IDE de desenvolvimento Java, recomendado IntelliJ.
-- Postman e essa coleção de testes (https://www.getpostman.com/collections/af67577bd3dee035fff9).
+- JDK 11 ou superior devidamente instalada com suas variáveis de ambiente;
+- Alguma IDE de desenvolvimento Java, recomendado o IntelliJ IDEA;
+- Postman rodando minha coleção feita para testes: https://www.getpostman.com/collections/af67577bd3dee035fff9;
 
 ### 🔧 Instalação
 
-- Clone esse repositório na sua máquina
-- Abra o IntelliJ e importe os 4 projetos em paralelo (quatro instâncias do IntelliJ)
-- Suba cada uma das 4 pelo botão de play no IntelliJ (suba o eureka-server primeiro)
-- Já é possivel acessar a dashboard do Eureka pelo endereço localhost:8762
-- Por fim abra o Postman, importe a coleção anexada nesse projeto e se divirta!
+- Clonar o repositório na máquina;
+- Abrir o IntelliJ IDEIA e importar os 4 projetos em paralelo (quatro instâncias do IntelliJ abertas);
+- Rode cada uma das 4 pelo botão de play no IntelliJ (suba o eureka-server primeiro);
+- Com o eureka-server up já é possivel acessar a dashboard pelo endereço localhost:8762 e visualizar os microsserviços;
+- Por fim abrir o Postman, File -> Import e selecionar a aba Link e colar o link disponibilizado acima; 
+- Perceba que foi mantido um padrão de url: o ms de ticket vai subir na porta 6060, o de produto na 6161 e o de cliente na 6262. Logo, para acessar o banco de dados de cada um, acessar a url "localhost:6x6x/h2-console";
+- No campo de url preencher com "jdbc:h2:file:./data/xxxms" substituindo o nome do microsserviço (se atente ao nome do ms ser o mesmo da porta acessada);
+- No campo usuário preencher "amaral" e a senha deixar em branco;
+- Pode ser necessário inserir as tuplas em cada banco, e para isso, acesse a pasta "properties" de cada ms, encontrando um arquivo "data.sql";
+- Basta copiar esse código, colar no h2 e rodar, inserindo assim os dados no banco;
 
 ## 🛠️ Construído com
 
-* [Java](https://dev.java/) - Linguagem de programação usada;
+* [Java 11](https://dev.java/) - Linguagem de programação usada;
 * [Maven](https://maven.apache.org/) - Gerenciador de dependências;
 * [Spring Boot](https://spring.io/projects/spring-boot) - Projeto do Spring utilizado para construir as aplicações REST com facilidade;
 * [Spring Cloud](https://spring.io/projects/spring-cloud) - Projeto do Spring para comunicação de serviços;
@@ -33,7 +38,7 @@
 
 ## ✒️ Autores
 
-* **Antonio Amaral** - *Desenvolvimento, Arquitetura e documentação* - [oamaraldev](https://github.com/oamaraldev)
+* **Antonio Amaral** - *Desenvolvimento, Arquitetura e Documentação* - [oamaraldev](https://github.com/oamaraldev)
 * **Mateus Nazaré** - *Desenvolvimento* - [MateusNazare](https://github.com/MateusNazare)
 
 ---
