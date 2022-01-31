@@ -24,8 +24,8 @@
 - Por fim abrir o Postman, File -> Import e selecionar a aba Link; 
 - Colar o link disponibilizado acima e se divertir!
 - Perceba que foi mantido um padrão de url: o ms de ticket vai subir na porta 6060, o de produto na 6161 e o de cliente na 6262. Para acessar o banco de dados H2 de cada um, acessar a url localhost:6x6x/h2-console.
-- No campo de url substituir por jdbc:h2:file:./data/*nomeDoMsAqui*ms;
-- No usuário preencher "amaral" e a senha deixar em branco;
+- No campo de url substituir por "jdbc:h2:file:./data/xxxms";
+- No campo usuário preencher "amaral" e a senha deixar em branco;
 
 ## 🛠️ Construído com
 
