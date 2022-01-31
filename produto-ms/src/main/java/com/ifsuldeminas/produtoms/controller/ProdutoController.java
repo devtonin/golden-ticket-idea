@@ -57,9 +57,13 @@ public class ProdutoController {
 
         if (produtoAntigo.isPresent()) {
             ProdutoDTO produto = produtoAntigo.get();
+
             produto.setProdutoName(produtoNovo.getProdutoName());
+            produto.setTicket(produtoNovo.getTicket());
+            produto.setProdutoId(produtoNovo.getProdutoId());
+
             produtoRepository.save(produto);
-            return new ResponseEntity<ProdutoDTO>(produto, HttpStatus.OK);
+            return new ResponseEntity<>(produto, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
