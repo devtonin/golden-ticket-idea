@@ -26,7 +26,7 @@
 - No campo de url preencher com "jdbc:h2:file:./data/xxxms" substituindo o nome do microsserviço (se atente ao nome do ms ser o mesmo da porta acessada);
 - No campo usuário preencher "amaral" e a senha deixar em branco;
 - Pode ser necessário inserir as tuplas em cada banco, e para isso, acesse a pasta "properties" de cada ms, encontrando um arquivo "data.sql";
-- Basta copiar esse código, colar no h2 e rodar, inserindo os dados nos bancos.
+- Basta copiar esse código, colar no h2 e rodar, inserindo assim os dados no banco;
 
 ## 🛠️ Construído com
 
