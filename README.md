@@ -3,7 +3,7 @@
 - Esse projeto foi desenvolvido com propósitos educacionais apenas, para a disciplina de Sistemas Distribuídos 2021/1 do curso de Engenharia de Computação do Instituto Federal do Sul de Minas Gerais.
 - O projeto conta com 3 microsserviços, sendo o microsserviço de Produto um CRUD completo. Cada microsserviço sobe sua própria instância do banco H2 e todos os três se comunicam via REST, com as facilidades do Eureka Server.
 
-## 🚀 Começando
+## 🚀 Como funciona
 
 - O microsserviço Ticket funciona com um bilhete, podendo ser encontrado em todos os produtos. O que define se o bilhete é premiado ou não é seu status ("ATIVO" ou "INATIVO").
 - O microsserviço Produto possui um bilhete, e os dois possuem o atributo "produtoId" em comum.
