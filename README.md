@@ -6,8 +6,9 @@
 ## 🚀 Começando
 
 - O microsserviço Ticket funciona com um bilhete, podendo ser encontrado em um produto. O que define se ele está premiado ou não é seu status.
-- O microsserviço Produto possui um bilhete. Os dois tem o atributo "produtoId" em comum.
+- O microsserviço Produto possui um bilhete. Os dois possuem atributo "produtoId" em comum.
 - O microsserviço Cliente também possui um bilhete, com o atributo "ticketId" em comum, podendo assim o Cliente ter tirado um bilhete premiado.
+- Todos os produtos possuem um bilhete, o que define ou não se estão premiados é seu status, podendo ser "ATIVO" ou "INATIVO".
 
 ### 📋 Pré-requisitos
 
