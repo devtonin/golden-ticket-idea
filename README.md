@@ -21,9 +21,8 @@
 - Abrir o IntelliJ IDEIA e importar os 4 projetos em paralelo (quatro instâncias do IntelliJ abertas);
 - Rode cada uma das 4 pelo botão de play no IntelliJ (suba o eureka-server primeiro);
 - Com o eureka-server up já é possivel acessar a dashboard pelo endereço localhost:8762 e visualizar os microsserviços;
-- Por fim abrir o Postman, File -> Import e selecionar a aba Link; 
-- Colar o link disponibilizado acima e se divertir!
-- Perceba que foi mantido um padrão de url: o ms de ticket vai subir na porta 6060, o de produto na 6161 e o de cliente na 6262. Para acessar o banco de dados H2 de cada um, acessar a url localhost:6x6x/h2-console.
+- Por fim abrir o Postman, File -> Import e selecionar a aba Link e colar o link disponibilizado acima; 
+- Perceba que foi mantido um padrão de url: o ms de ticket vai subir na porta 6060, o de produto na 6161 e o de cliente na 6262. Logo, para acessar o banco de dados de cada um, acessar a url "localhost:6x6x/h2-console";
 - No campo de url substituir por "jdbc:h2:file:./data/xxxms";
 - No campo usuário preencher "amaral" e a senha deixar em branco;
 
