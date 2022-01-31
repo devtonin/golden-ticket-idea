@@ -11,15 +11,15 @@
 
 ### 📋 Pré-requisitos
 
-- JDK 11 ou superior devidamente instalada com suas variáveis de ambiente.
-- Alguma IDE de desenvolvimento Java, recomendado IntelliJ IDEA.
-- Postman rodando minha coleção feita para testes: https://www.getpostman.com/collections/af67577bd3dee035fff9.
+- JDK 11 ou superior devidamente instalada com suas variáveis de ambiente;
+- Alguma IDE de desenvolvimento Java, recomendado IntelliJ IDEA;
+- Postman rodando minha coleção feita para testes: https://www.getpostman.com/collections/af67577bd3dee035fff9;
 
 ### 🔧 Instalação
 
 - Clonar o repositório na máquina;
 - Abrir o IntelliJ IDEIA e importar os 4 projetos em paralelo (quatro instâncias do IntelliJ abertas);
-- Rode cada uma das 4 pelo botão de play no IntelliJ (suba o eureka-server primeiro)
+- Rode cada uma das 4 pelo botão de play no IntelliJ (suba o eureka-server primeiro);
 - Com o eureka-server up já é possivel acessar a dashboard pelo endereço localhost:8762 e visualizar os microsserviços;
 - Por fim abrir o Postman e importar a coleção acima;
 
