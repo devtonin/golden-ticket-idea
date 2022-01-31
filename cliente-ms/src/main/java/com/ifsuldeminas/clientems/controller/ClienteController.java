@@ -27,7 +27,7 @@ public class ClienteController {
         return clientes;
     }
 
-    //get por numeroPremiado
+    //getByTicketId
     @GetMapping(value = "/cliente/{ticketId}")
     public ClienteDTO findByTicketId(@PathVariable Integer ticketId) {
         ClienteDTO cliente = clienteRepository.findByTicketId(ticketId);
