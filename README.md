@@ -11,35 +11,35 @@
 
 ### 📋 Pré-requisitos
 
-- JDK 11 ou superior devidamente instalada com suas variáveis de ambiente;
-- Alguma IDE de desenvolvimento Java, recomendado o IntelliJ IDEA;
-- Postman rodando minha coleção feita para testes: https://www.getpostman.com/collections/af67577bd3dee035fff9;
+- JDK 11 ou superior devidamente instalada com suas variáveis de ambiente
+- Alguma IDE de desenvolvimento Java, recomendado o IntelliJ IDEA
+- Postman rodando minha coleção feita para testes: https://www.getpostman.com/collections/af67577bd3dee035fff9
 
 ### 🔧 Instalação
 
-- Clonar o repositório na máquina;
-- Abrir o IntelliJ e importar os 4 projetos em paralelo (quatro instâncias do IntelliJ abertas);
-- Rode cada uma das 4 pelo botão de play no IntelliJ (suba o eureka-server primeiro);
-- Com o eureka-server up já é possivel acessar a dashboard pelo endereço localhost:8762 e visualizar os microsserviços;
-- Por fim abrir o Postman, File -> Import e selecionar a aba Link e colar o link disponibilizado acima; 
-- Perceba que foi mantido um padrão de url: o ms de ticket vai subir na porta 6060, o de produto na 6161 e o de cliente na 6262. Logo, para acessar o banco de dados de cada um, acessar a url "localhost:6x6x/h2-console";
-- No campo de url preencher com "jdbc:h2:file:./data/xxxms" substituindo o nome do microsserviço (se atente ao nome do ms ser o mesmo da porta acessada);
-- No campo usuário preencher "amaral" e a senha deixar em branco;
-- Pode ser necessário inserir as tuplas em cada banco, e para isso, acesse a pasta "properties" de cada ms, encontrando um arquivo "data.sql";
-- Basta copiar esse código, colar no h2 e rodar, inserindo assim os dados no banco;
+- Clonar o repositório na máquina
+- Abrir o IntelliJ e importar os 4 projetos em paralelo
+- Rode cada uma das 4 em paralelo - subir o eureka-server primeiro
+- Com o eureka-server up já é possivel acessar a dashboard pelo endereço localhost:8762 e visualizar os microsserviços
+- Por fim abrir o Postman, File -> Import e selecionar a aba Link e colar o link disponibilizado acima;
+- Perceba que foi mantido um padrão de url: o ms de ticket vai subir na porta 6060, o de produto na 6161 e o de cliente na 6262. Logo, para acessar o banco de dados de cada um, acessar a url "localhost:6x6x/h2-console"
+- No campo de url preencher com "jdbc:h2:file:./data/xxx-ms" substituindo o nome do microsserviço (se atente ao nome do ms ser o mesmo da porta acessada)
+- No campo usuário preencher "amaral" e a senha deixar em branco
+- Pode ser necessário inserir as tuplas em cada banco, e para isso, acesse a pasta "properties" de cada ms, encontrando um arquivo "data.sql"
+- Basta copiar esse código, colar no h2 e rodar, inserindo assim os dados no banco
 
 ## 🛠️ Construído com
 
-* [Java 11](https://dev.java/) - Linguagem de programação usada;
-* [Maven](https://maven.apache.org/) - Gerenciador de dependências;
-* [Spring Boot](https://spring.io/projects/spring-boot) - Projeto do Spring utilizado para construir as aplicações REST com facilidade;
-* [Spring Cloud](https://spring.io/projects/spring-cloud) - Projeto do Spring para comunicação de serviços;
-* [H2 Database](https://www.h2database.com/html/main.html) - Banco de dados local para aplicações Java.
+* [Java 11](https://dev.java/) - Linguagem de programação
+* [Maven](https://maven.apache.org/) - Gerenciador de dependências Java
+* [Spring Boot](https://spring.io/projects/spring-boot) - Projeto do Spring utilizado para construir as aplicações REST
+* [Spring Cloud](https://spring.io/projects/spring-cloud) - Projeto do Spring para comunicação HTTP
+* [H2 Database](https://www.h2database.com/html/main.html) - Banco de dados local para aplicações Java
 
 ## ✒️ Autores
 
-* **Antonio Amaral** - *Desenvolvimento, Arquitetura e Documentação* - [oamaraldev](https://github.com/oamaraldev)
+* **Antônio Zamai** - *Arquitetura, Desenvolvimento e Documentação* - [oamaraldev](https://github.com/zamaidev)
 * **Mateus Nazaré** - *Desenvolvimento* - [MateusNazare](https://github.com/MateusNazare)
 
 ---
-⌨️ com ❤️ por [Antonio Amaral](https://github.com/oamaraldev)
+⌨️ com ❤️ por [Antônio Zamai](https://github.com/zamaidev)
