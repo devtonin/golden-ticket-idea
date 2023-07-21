@@ -38,7 +38,7 @@
 
 ## ✒️ Autores
 
-* **Antônio Zamai** - *Arquitetura, Desenvolvimento e Documentação* - [oamaraldev](https://github.com/zamaidev)
+* **Antônio Zamai** - *Arquitetura, Desenvolvimento e Documentação* - [zamaidev](https://github.com/zamaidev)
 * **Mateus Nazaré** - *Desenvolvimento* - [MateusNazare](https://github.com/MateusNazare)
 
 ---
