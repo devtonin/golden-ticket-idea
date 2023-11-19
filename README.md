@@ -38,8 +38,8 @@
 
 ## ✒️ Autores
 
-* **Antônio Zamai** - *Arquitetura, Desenvolvimento e Documentação* - [zamaidev](https://github.com/zamaidev)
+* **Antonio Amaral** - *Arquitetura, Desenvolvimento e Documentação* - [devtonin](https://github.com/devtonin)
 * **Mateus Nazaré** - *Desenvolvimento* - [MateusNazare](https://github.com/MateusNazare)
 
 ---
-⌨️ com ❤️ por [Antônio Zamai](https://github.com/zamaidev)
+⌨️ com ❤️ por [Antonio Amaral](https://github.com/devtonin)
