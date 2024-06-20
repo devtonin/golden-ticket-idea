@@ -35,7 +35,7 @@
 
 ## ✒️ Autores
 
-* **Antonio Amaral** - *Arquitetura, Desenvolvimento e Documentação* - [devtonin](https://github.com/devtonin)
+* **Antonio Amaral** - *Desenvolvimento e Documentação* - [devtonin](https://github.com/devtonin)
 * **Mateus Nazaré** - *Desenvolvimento* - [MateusNazare](https://github.com/MateusNazare)
 
 ---
