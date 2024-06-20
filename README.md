@@ -1,4 +1,4 @@
-# Golden Ticket Idea
+# 🏆 Golden Ticket Idea App 🏆
 
 - Esse projeto foi desenvolvido com propósitos educacionais apenas, para a disciplina de Sistemas Distribuídos 2021/2 do curso de Engenharia de Computação do Instituto Federal do Sul de Minas Gerais.
 - O projeto conta com 3 microsserviços, sendo o microsserviço de Produto um CRUD completo. Cada microsserviço sobe sua própria instância do banco H2 e todos os três se comunicam via REST, com as facilidades do Eureka Server.
@@ -30,11 +30,11 @@
 
 ## 🛠️ Construído com
 
-* [Java 11](https://dev.java/) - Linguagem de programação
-* [Maven](https://maven.apache.org/) - Gerenciador de dependências Java
-* [Spring Boot](https://spring.io/projects/spring-boot) - Projeto do Spring utilizado para construir as aplicações REST
-* [Spring Cloud](https://spring.io/projects/spring-cloud) - Projeto do Spring para comunicação HTTP
-* [H2 Database](https://www.h2database.com/html/main.html) - Banco de dados local para aplicações Java
+* [Java 11](https://dev.java/)
+* [Maven](https://maven.apache.org/)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [Spring Cloud](https://spring.io/projects/spring-cloud)
+* [H2 Database](https://www.h2database.com/html/main.html)
 
 ## ✒️ Autores
 
@@ -42,4 +42,4 @@
 * **Mateus Nazaré** - *Desenvolvimento* - [MateusNazare](https://github.com/MateusNazare)
 
 ---
-⌨️ com ❤️ por [Antonio Amaral](https://github.com/devtonin)
+⌨️ com ❤️ por [devtonin](https://github.com/devtonin)
