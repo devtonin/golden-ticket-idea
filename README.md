@@ -17,9 +17,8 @@
 
 ### 🔧 Instalação
 
-- Abrir o IntelliJ e importar os 4 projetos em paralelo
-- Rode cada uma das 4 em paralelo (subir o eureka-server primeiro)
-- Com o eureka-server up já será possivel acessar a dashboard pelo endereço 'localhost:8762' e visualizar os microsserviços
+- Rode cada um dos 4 projetos em paralelo (subir o eureka-server primeiro)
+- Acessar a dashboard do Eureka pelo endereço 'localhost:8762' e visualizar os microsserviços
 - Por fim abrir o Postman, File -> Import, selecionar a aba Link e colar o link disponibilizado acima
 - O ms de ticket vai subir na porta 6060, o de produto na 6161 e o de cliente na 6262. Logo, para acessar o banco de dados de cada um, acessar a url 'localhost:6x6x/h2-console'
 - No campo de url preencher com 'jdbc:h2:file:./data/xxx-ms' substituindo o nome do ms (se atente ao nome ser o mesmo da porta acessada)
